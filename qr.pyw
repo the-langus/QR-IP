@@ -65,7 +65,7 @@ def gen_qr():
         box_size=10,
         border=4,
     )
-    qr.add_data(url_with_port)
+    qr.add_data("%URL%" + url_with_port)
     qr.make(fit=True)
 
     qr_image = qr.make_image(fill='black', back_color='white')
